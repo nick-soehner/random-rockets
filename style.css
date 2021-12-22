@@ -1,0 +1,106 @@
+:root {
+    --primary: #105bd8;
+    --primary-darker: #0b3d91;
+    --primary-darkest: #061f4a;
+    --base: #212121;
+    --dark-gray: #323a45;
+    --light-gray: #aeb0b5;
+    --white: #ffffff;
+    --transition: all 0.3s linear;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* ================= Main Page ================= */
+
+#rockets {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+
+.container {
+    padding: 50px 100px;
+    background-color: white;
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 20px rgb(70, 70, 70));
+}
+
+h1 {
+    /* margin: 50px; */
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--primary-darker);
+}
+
+img {
+    width: 275px;
+    height: 400px;
+}
+
+article {
+    margin: 0 20px;
+    text-align: center;
+    max-width: 800px;
+}
+
+#name {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+#years {
+    color: var(--primary-darker);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.button-container {
+    margin: 10px 0;
+}
+
+.prev-btn,
+.next-btn {
+  color: var(--primary);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--primary-darkest);
+}
+
+.random-btn {
+  font-size: 1rem;
+  background: var(--white);
+  color: var(--primary);
+  padding: 0.5rem 0.75rem;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border-color: var(--primary);
+  cursor: pointer;
+}
+.random-btn:hover {
+  color: var(--primary-darker);
+}
